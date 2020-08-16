@@ -1,5 +1,5 @@
 # AMAZONA-
-Building an ECommerce website like Amazon along with payment gateway(Paypal) using the MERN stack.
+Building an E-commerce website like Amazon along with payment gateway(Paypal) using the MERN stack.
 
 -> Web-Design using HTML5,CSS,Flexbox etc.
 
