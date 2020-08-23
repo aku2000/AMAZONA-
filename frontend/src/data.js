@@ -1,6 +1,7 @@
 export default {
     products: [
         {
+            _id: '1',
             name: 'Woman T-shirt',
             category: 'T-shirts',
             image: '/images/d1.jpg',
@@ -10,6 +11,7 @@ export default {
             numReviews: 8
         },
         {
+            _id: '2',
             name: 'Crop top',
             category: 'T-shirts',
             image: '/images/d2.jpg',
@@ -19,6 +21,7 @@ export default {
             numReviews: 32
         },
         {
+            _id: '3',
             name: 'High Waist Jeans',
             category: 'Jeans',
             image: '/images/d3.jpg',
@@ -26,6 +29,6 @@ export default {
             brand: 'H&M',
             rating: 4.5,
             numReviews: 16
-        }
+        },
     ]
 }
