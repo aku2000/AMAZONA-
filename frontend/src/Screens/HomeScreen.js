@@ -1,13 +1,30 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
-import data from '../data';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 function HomeScreen(props)
 {
+    //define React hooks
+    const [products, setProduct] = useState([]);
+
+    useEffect(() =>
+    {
+        const fetchData = async () =>
+        {
+            const { data } = await axios.get("/api/products");
+            setProduct(data);
+        }
+        fetchData();
+        return () =>
+        {
+            //
+        };
+    }, [])
+
     return <ul className="products">
         {
-            data.products.map(product =>
-                <li>
+            products.map(product =>
+                <li key={product._id}>
                     <div className="product">
                         <Link to={'/product/' + product._id}>
                             <img className="product-image" src={product.image} alt="product" />
@@ -18,13 +35,10 @@ function HomeScreen(props)
                         </div>
                         <div className="product-brand">{product.brand}</div>
                         <div className="product-price">RS. {product.price}</div>
-                        <div className="product-rating">{product.rating} Stars ({product.numReiews} Reviews)</div>
+                        <div className="product-rating">{product.rating} Stars ({product.numReviews} Reviews)</div>
                     </div>
                 </li>)
         }
-
-
-
     </ul>
 }
 export default HomeScreen;
