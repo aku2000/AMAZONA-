@@ -1,0 +1,10 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env"
+        ]
+    ]
+}
+
+
+// ES6 CODE cause default runs ES5CODE , install babel packages to run ES6 from terminal
