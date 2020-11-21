@@ -8,7 +8,8 @@ export default {
             price: 1500,
             brand: 'Puma',
             rating: 4.5,
-            numReviews: 8
+            numReviews: 8,
+            countInStock: 6,
         },
         {
             _id: '2',
@@ -18,7 +19,8 @@ export default {
             price: 800,
             brand: 'Mango',
             rating: 3,
-            numReviews: 32
+            numReviews: 32,
+            countInStock: 0,
         },
         {
             _id: '3',
@@ -28,7 +30,8 @@ export default {
             price: 2500,
             brand: 'H&M',
             rating: 4.5,
-            numReviews: 16
+            numReviews: 16,
+            countInStock: 13,
         },
     ]
 }
